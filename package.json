@@ -13,6 +13,7 @@
   "author": "Manuel Eguiluz (@meguiluzortiz)",
   "license": "MIT",
   "scripts": {
+    "postinstall": "yarn build",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
     "start": "node build/index",
