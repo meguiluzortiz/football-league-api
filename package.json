@@ -1,0 +1,51 @@
+{
+  "name": "football-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "12"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "express.js"
+  ],
+  "author": "Manuel Eguiluz (@meguiluzortiz)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "start": "tsc && node build/index",
+    "start:dev": "nodemon",
+    "start:debug": "nodemon --inspect=9229 --exec node -r ts-node/register ./src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@types/helmet": "^0.0.48",
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "mongodb": "^3.6.2",
+    "monk": "^7.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/jest": "^26.0.14",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "prettier": "2.1.2",
+    "supertest": "^5.0.0",
+    "ts-jest": "^26.4.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
