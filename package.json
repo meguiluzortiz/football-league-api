@@ -15,7 +15,7 @@
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
-    "start": "npm run build && node build/index",
+    "start": "node build/index",
     "start:dev": "nodemon",
     "start:debug": "nodemon --inspect=9229 --exec node -r ts-node/register ./src/index.ts",
     "build": "tsc",
